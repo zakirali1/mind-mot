@@ -1,9 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import reportWebVitals from "./reportWebVitals";
+import React from "react";
 
-export default
-//INSERT NAME HERE;
+function Container(props) {
+  return <div className="container" style={props.style}>{props.children}</div>;
+}
+
+export default Container;

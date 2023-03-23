@@ -3,13 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css";
 import heroBackground from "../../assets/hero-background.jpg";
 
-function Hero(props) {
+function MiniHero(props) {
 return (
-    <div className="hero text-center" style={{ backgroundImage: `url(${heroBackground})` }}>
+    <div className="minihero text-center" style={{ backgroundImage: `url(${heroBackground})` }}>
     {props.children}
 </div>
 );
 }
 
-export default Hero;
-//INSERT NAME HERE;
+export default MiniHero;

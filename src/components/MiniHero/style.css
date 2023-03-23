@@ -1,0 +1,33 @@
+.minihero {
+height: 100px;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+.minihero::after {
+content: "";
+display: block;
+opacity: .4;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: black;
+}
+
+.minihero * {
+position: relative;
+z-index: 2;
+}
+
+.minihero h1, .hero h2 {
+color: white;
+}
+
+.minihero h1 {
+font-size: 60px;
+padding-top: 10px;
+margin-top: 0;
+}
