@@ -9,7 +9,7 @@ function Move() {
   return (
     <div>
       <MiniHero backgroundImage={heroBackground}>
-        <h1>Sleep</h1>
+        <h1>Move</h1>
       </MiniHero>
       <Container style={{ marginTop: 30 }}>
         <Row>
