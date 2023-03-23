@@ -3,7 +3,9 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
-import heroBackground from "../assets/hero-background.jpg";
+import heroBackground from "../assets/hero-background.jpg"
+import PillarCard from "../components/PillarCard/PillarCard";
+
 
 function Home() {
   return (
@@ -18,6 +20,26 @@ function Home() {
             <h1>Your Daily Health Signposting</h1>
           </Col>
         </Row>
+
+
+        {/* 4 PILLAR CARD */}
+
+        <Row>
+          <Col size="md-12">
+
+            <PillarCard/>
+            
+          </Col>
+        </Row>
+          
+
+        <Row>
+          <Col size="md-12">
+            <h2>Your Daily Health Signposting</h2>
+          </Col>
+        </Row>
+
+
         <Row>
           <Col size="md-12">
             <p>
