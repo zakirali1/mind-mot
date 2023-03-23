@@ -4,13 +4,13 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg";
+import Zenapi from "../components/Zenapi/Zenapi";
 
 function Home() {
   return (
     <div>
       <Hero backgroundImage={heroBackground}>
-        <h1>Inspirational Quote</h1>
-        <h2>Inspirational Person</h2>
+        <Zenapi />
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
