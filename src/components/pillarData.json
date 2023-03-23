@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "pillarName": "Eat",
+        "pillarDesc": "This pillar focuses on the daily nutrition that support your health and wellbeing",
+        "toDo": ["Chose a lower sugar alternative", "Eat vegetables spanning the rainbow colours", "Eat within a 12 hour window (to encourage micro-fasting)", "Drink at least 250ml glasses of water", "Avoid processed foods (those containing more than 5 ingredients and excessive preservatives)"],
+        "image": "eat.png",
+        "imageUrl": "../assets/eat.png",
+        "imageAlt": "An image of a glass of water and an apple representing the Eat pillar"
+    },
+    {
+        "id": 1,
+        "pillarName": "Move",
+        "pillarDesc": "This pillar focuses on the daily physical activities and movements that support your health and wellbeing",
+        "toDo": ["Walk at least 10,000 steps", "Do 1 of 2 strength trainings this week", "Do 1 of 2 10 minute HIIT this week", "Do a movement snack", "Do 1 glute movement"],
+        "image": "move.png",
+        "imageUrl": "../assets/move.png",
+        "imageAlt": "An icon of a heart beating to represent the Move pillar"
+    },
+    {
+        "id": 2,
+        "pillarName": "Relax",
+        "pillarDesc": "This pillar focuses on the daily relaxation and mindfulness activities that support your health and wellbeing",
+        "toDo": ["Take at least 15 minutes of 'me' time", "Have a screen-free day", "Write down 3 gratitudes", "Be still for 5 minutes", "Eat a meal distraction- and device-free"],
+        "image": "relax.png",
+        "imageUrl": "../assets/relax.png",
+        "imageAlt": "An icon of a music player and headphones representing relaxation and the Relax pillar"
+    },
+    {
+        "id": 3,
+        "pillarName": "Sleep",
+        "pillarDesc": "This pillar focuses on the daily sleep and rest activities that support your health and wellbeing",
+        "toDo": ["Keep bedroom dark and put devices away/off", "Spend 20 minutes outside in the morning", "No technology 90 minutes before bed", "Minimise any highly emotional issues/conversations before bed", "Consume caffeine before lunchtime"],
+        "image": "sleep.png",
+        "imageUrl": "../assets/sleep.png",
+        "imageAlt": "An icon of a bed representing the Sleep pillar"
+    }
+]
