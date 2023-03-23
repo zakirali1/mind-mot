@@ -1,9 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import reportWebVitals from "./reportWebVitals";
+import React from "react";
+import "./style.css";
 
-export default
-//INSERT NAME HERE;
+function Wrapper(props) {
+  return <main className="wrapper">{props.children}</main>;
+}
+
+export default Wrapper;
