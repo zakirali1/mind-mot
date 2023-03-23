@@ -6,13 +6,14 @@ import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg"
 import PillarCard from "../components/PillarCard/PillarCard";
 
+import Zenapi from "../components/Zenapi/Zenapi";
+import GaugeChart from 'react-gauge-chart'
 
 function Home() {
   return (
     <div>
       <Hero backgroundImage={heroBackground}>
-        <h1>Inspirational Quote</h1>
-        <h2>Inspirational Person</h2>
+        <Zenapi />
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
