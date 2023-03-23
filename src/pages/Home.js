@@ -5,6 +5,7 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg";
 import Zenapi from "../components/Zenapi/Zenapi";
+import GaugeChart from 'react-gauge-chart'
 
 function Home() {
   return (
