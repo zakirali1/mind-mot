@@ -4,15 +4,16 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg";
-import GaugeChart from 'react-gauge-chart'
 
 function Eat() {
   return (
+        <div className="mainContainer">
     <div>
       <MiniHero backgroundImage={heroBackground}>
         <h1>Eat</h1>
       </MiniHero>
       <Container style={{ marginTop: 30 }}>
+      
         <Row>
           <Col size="md-12">
             <h1>Your Daily Smoothie Recipe</h1>
@@ -58,6 +59,7 @@ function Eat() {
           </Col>
         </Row>
       </Container>
+    </div>
     </div>
   );
 }

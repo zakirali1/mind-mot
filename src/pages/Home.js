@@ -5,21 +5,20 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg"
 import PillarCard from "../components/PillarCard/PillarCard";
-
+import 'animate.css';
 import Zenapi from "../components/Zenapi/Zenapi";
-import GaugeChart from 'react-gauge-chart'
 
 
 function Home() {
   return (
-    <div>
+    <div className="mainContainer">
       <Hero backgroundImage={heroBackground}>
-        <Zenapi />
+      <Zenapi/>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-            <h1>Your Daily Health Signposting</h1>
+            <h1 className="d-flex justify-content-center">Your Daily Dashboard</h1>
           </Col>
         </Row>
 
@@ -27,14 +26,11 @@ function Home() {
         {/* 4 PILLAR CARD */}
 
         <Row>
-          <Col size="md-12">
-
             <PillarCard/>
-            
-          </Col>
         </Row>
-          
-
+</Container>
+      <Container style={{ marginTop: 30 }}>
+      
         <Row>
           <Col size="md-12">
             <h2>Your Daily Health Signposting</h2>
