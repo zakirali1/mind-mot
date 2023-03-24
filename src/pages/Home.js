@@ -25,9 +25,9 @@ function Home() {
         {/* 4 PILLAR CARD */}
 
         <Row>
-            <PillarCard/>
+         <PillarCard/>
         </Row>
-</Container>
+      </Container>
       <Container style={{ marginTop: 30 }}>
       
         <Row>
