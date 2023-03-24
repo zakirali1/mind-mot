@@ -7,6 +7,7 @@ import heroBackground from "../assets/hero-background.jpg"
 import PillarCard from "../components/PillarCard/PillarCard";
 import 'animate.css';
 import Zenapi from "../components/Zenapi/Zenapi";
+import Gratitude from "../components/gratitude/Gratitude";
 
 
 function Home() {
@@ -77,6 +78,7 @@ function Home() {
             </p>
           </Col>
         </Row>
+        <Gratitude />
       </Container>
     </div>
   );
