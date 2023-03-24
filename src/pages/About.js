@@ -7,7 +7,7 @@ import heroBackground from "../assets/hero-background.jpg";
 
 function About() {
   return (
-    <div>
+    <div className="mainContainer">
       <MiniHero backgroundImage={heroBackground}>
       <h1>We are MindMOT</h1>
       </MiniHero>
