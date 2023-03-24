@@ -9,6 +9,7 @@ import PillarCard from "../components/PillarCard/PillarCard";
 import Zenapi from "../components/Zenapi/Zenapi";
 import GaugeChart from 'react-gauge-chart'
 
+
 function Home() {
   return (
     <div>
