@@ -7,7 +7,7 @@ import heroBackground from "../assets/hero-background.jpg";
 
 function Move() {
   return (
-    <div>
+    <div className="mainContainer">
       <MiniHero backgroundImage={heroBackground}>
         <h1>Move</h1>
       </MiniHero>

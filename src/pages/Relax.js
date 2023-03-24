@@ -7,7 +7,7 @@ import heroBackground from "../assets/hero-background.jpg";
 
 function Relax() {
   return (
-    <div>
+    <div className="mainContainer">
       <MiniHero backgroundImage={heroBackground}>
         <h1>Relax</h1>
       </MiniHero>

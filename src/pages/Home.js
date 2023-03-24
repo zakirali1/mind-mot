@@ -3,21 +3,42 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
-import heroBackground from "../assets/hero-background.jpg";
+import heroBackground from "../assets/hero-background.jpg"
+import PillarCard from "../components/PillarCard/PillarCard";
+import 'animate.css';
+import Zenapi from "../components/Zenapi/Zenapi";
+import Gratitude from "../components/gratitude/Gratitude";
+
 
 function Home() {
   return (
-    <div>
+    <div className="mainContainer">
       <Hero backgroundImage={heroBackground}>
-        <h1>Inspirational Quote</h1>
-        <h2>Inspirational Person</h2>
+      <Zenapi/>
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-            <h1>Your Daily Health Signposting</h1>
+            <h1 className="d-flex justify-content-center">Your Daily Dashboard</h1>
           </Col>
         </Row>
+
+
+        {/* 4 PILLAR CARD */}
+
+        <Row>
+            <PillarCard/>
+        </Row>
+</Container>
+      <Container style={{ marginTop: 30 }}>
+      
+        <Row>
+          <Col size="md-12">
+            <h2>Your Daily Health Signposting</h2>
+          </Col>
+        </Row>
+
+
         <Row>
           <Col size="md-12">
             <p>
@@ -57,6 +78,7 @@ function Home() {
             </p>
           </Col>
         </Row>
+        <Gratitude />
       </Container>
     </div>
   );
