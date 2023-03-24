@@ -8,6 +8,7 @@ import PillarCard from "../components/PillarCard/PillarCard";
 import 'animate.css';
 import Zenapi from "../components/Zenapi/Zenapi";
 
+
 function Home() {
   return (
     <div className="mainContainer">
