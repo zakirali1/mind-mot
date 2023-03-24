@@ -7,12 +7,7 @@ const proxyUrl = 'https://api.allorigins.win/raw?url='
  function Zenapi() {
 
 
-    const [quotes, setQuotes] = useState(
-        {
-            q: "Give me six hours to chop down a tree and I will spend the first four sharpening the axe",
-            a: "Abraham Lincoln"
-        }
-    );
+    const [quotes, setQuotes] = useState([]);
 
    
     
