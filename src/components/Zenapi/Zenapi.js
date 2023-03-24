@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import "./style.css";
 
 const baseUrl = 'https://zenquotes.io/api/quotes/random';
 const proxyUrl = 'https://api.allorigins.win/raw?url='
 
  function Zenapi() {
 
-
     const [quotes, setQuotes] = useState([]);
 
-   
-    
     useEffect(() => {
         async function getquotes() {
             try {
@@ -37,8 +35,8 @@ const proxyUrl = 'https://api.allorigins.win/raw?url='
 
  return (
         <div>
-        <h1>{quotes.q}</h1>
-        <h2>{quotes.a}</h2>
+        <h1 className="zenQuote">{quotes.q}</h1>
+        <h2 className="zenAuth">{quotes.a}</h2>
     </div>
  )
 

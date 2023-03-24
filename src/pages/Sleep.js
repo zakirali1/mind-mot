@@ -4,11 +4,10 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg";
-import GaugeChart from 'react-gauge-chart'
 
 function Sleep() {
   return (
-    <div>
+    <div className="mainContainer">
       <MiniHero backgroundImage={heroBackground}>
         <h1>Sleep</h1>
       </MiniHero>

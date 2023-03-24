@@ -3,14 +3,14 @@ import pillarData from "../pillarData.json"
 import GaugeChart from 'react-gauge-chart'
 import "./style.css";
 
-function PillarCard() {
+function PillarPage() {
 
     return (
       pillarData && pillarData.map(pillar => (
-        <div className="container col-lg-3 col-md-6 col-sm-12 p-1 pillarContainer">
-        <div className="card animate__animated animate__fadeInUp h-100 pillarCard">
+        <div className="container col-lg-3 col-md-6 col-sm-12 p-1">
+        <div className="card animate__animated animate__fadeInUp h-100">
           <div className="card-body">
-            <h4 className="card-title text-center pillarCard-title">{pillar.pillarName}</h4>
+            <h4 className="card-title text-center">{pillar.pillarName}</h4>
 
               <GaugeChart id="pillar-gauge" 
               nrOfLevels={20} 
@@ -44,4 +44,4 @@ function PillarCard() {
     )
 }
 
-export default PillarCard
+export default PillarPage
