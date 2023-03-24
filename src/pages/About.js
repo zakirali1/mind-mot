@@ -4,7 +4,6 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg";
-import GaugeChart from 'react-gauge-chart'
 
 function About() {
   return (

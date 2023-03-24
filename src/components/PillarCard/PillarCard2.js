@@ -7,8 +7,8 @@ function PillarCard() {
 
     return (
       pillarData && pillarData.map(pillar => (
-        <div className="container col-lg-3 col-md-6 col-sm-12 p-1 pillarContainer">
-        <div className="card animate__animated animate__fadeInUp h-100 pillarCard">
+        <div className="container col-lg-3 col-md-6 col-sm-12 p-1">
+        <div className="card animate__animated animate__fadeInUp h-100">
           <div className="card-body">
             <h4 className="card-title text-center">{pillar.pillarName}</h4>
 
