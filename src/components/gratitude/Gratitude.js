@@ -6,16 +6,20 @@ import Button from 'react-bootstrap/Button'
 
 function Gratitude() {
 
-    const [inputs, setInputs] = useState({})
+    const [inputs, setInputs] = useState([])
 
+    let localS = localStorage.getItem("gratitude" ) || [];
+    
     function handleInputChange(event) {
       const { name, value } = event.target;
       setInputs(inputs => ({...inputs, [name]: value}))
+      
       console.log(inputs)
     }
 
 function handleClick(e) {
     console.log(e)
+    localS = localStorage.setItem("gratitude",JSON.stringify([inputs]))
 
   
 }
@@ -40,6 +44,7 @@ function handleClick(e) {
         </Col>
       </Row>
       <Button onClick={handleClick}>Save</Button>
+      
       </Form>
     </>
   )
