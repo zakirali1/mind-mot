@@ -1,53 +1,95 @@
-import React, { useState } from 'react'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button'
+import React, { useState } from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import "../gratitude/gratitude.css";
 
 function Gratitude() {
+  const [inputs, setInputs] = useState([]);
 
-    const [inputs, setInputs] = useState([])
+  let localS = localStorage.getItem("gratitude") || [];
 
-    let localS = localStorage.getItem("gratitude" ) || [];
-    
-    function handleInputChange(event) {
-      const { name, value } = event.target;
-      setInputs(inputs => ({...inputs, [name]: value}))
-      
-      console.log(inputs)
-    }
+  function handleInputChange(event) {
+    const { name, value } = event.target;
+    setInputs((inputs) => ({ ...inputs, [name]: value }));
 
-function handleClick(e) {
-    console.log(e)
-    localS = localStorage.setItem("gratitude",JSON.stringify([inputs]))
+    console.log(inputs);
+  }
 
-  
-}
+  function handleClick(e) {
+    console.log(e);
+    localS = localStorage.setItem("gratitude", JSON.stringify([inputs]));
+  }
   return (
     <>
-    <Form onClick={handleClick}>
-      <Row>
-        <Col>
-          <Form.Control type="text" name="input1" placeholder="what are you grateful for?" onChange={handleInputChange}/>
-        </Col>
-      </Row>
-      <br />
-      <Row>
-        <Col>
-          <Form.Control type="text" name="input2" placeholder="what are you grateful for?" onChange={handleInputChange}/>
-        </Col>
-      </Row>
-      <br />
-      <Row>
-        <Col>
-          <Form.Control type="text" name="input3" placeholder="what are you grateful for?" onChange={handleInputChange}/>
-        </Col>
-      </Row>
-      <Button onClick={handleClick}>Save</Button>
-      
+      <h3 style={{ textAlign: "center" }}>
+        Take your time to reflect. What are you grateful for today? Add your
+        thoughts below
+      </h3>
+
+      <Form
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "1em",
+          marginBottom: "1em",
+        }}
+        onClick={handleClick}
+      >
+        <Row className="journal-page">
+          <Col>
+            <Form.Control
+              as="textarea"
+              rows={3}
+              name="input1"
+              placeholder="what are you grateful for?"
+              onChange={handleInputChange}
+              className="entry"
+            />
+          </Col>
+        </Row>
+        <br />
+        <Row className="journal-page">
+          <Col>
+            <Form.Control
+              as="textarea"
+              rows={3}
+              name="input2"
+              placeholder="what are you grateful for?"
+              onChange={handleInputChange}
+              className="entry"
+            />
+          </Col>
+        </Row>
+        <br />
+        <Row className="journal-page">
+          <Col>
+            <Form.Control
+              className="entry"
+              as="textarea"
+              rows={3}
+              name="input3"
+              placeholder="what are you grateful for?"
+              onChange={handleInputChange}
+            />
+          </Col>
+        </Row>
       </Form>
+
+      <Button
+        style={{
+          display: "block",
+          margin: "auto",
+          backgroundColor: "grey",
+          border: "grey",
+        }}
+        onClick={handleClick}
+      >
+        Save
+      </Button>
     </>
-  )
+  );
 }
 
-export default Gratitude
+export default Gratitude;
