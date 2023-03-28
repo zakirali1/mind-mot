@@ -39,9 +39,9 @@ const proxyUrl = 'https://api.allorigins.win/raw?url='
 
 
  return (
-        <div>
-        <h1 className="zenQuote">{quotes.q}</h1>
-        <h2 className="zenAuth">{quotes.a}</h2>
+        <div className="align-items-center quoteContainer">
+        <div className="zenQuote">{quotes.q}</div>
+        <div className="zenAuth">{quotes.a}</div>
     </div>
  )
 

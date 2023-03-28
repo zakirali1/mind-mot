@@ -3,7 +3,15 @@ height: 350px;
 background-size: cover;
 background-position: center;
 position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 5em;
+height: 100%;
+width: 100%;
 }
+
 
 .hero::after {
 content: "";
