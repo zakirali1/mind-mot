@@ -34,7 +34,7 @@ function Home() {
       
         <Row>
           <Col size="md-12">
-            <h2>Your Daily Health Signposting</h2>
+            <h2 className="pageTitle">Your Daily Health Signposting</h2>
           </Col>
         </Row>
 
