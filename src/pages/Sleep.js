@@ -9,16 +9,18 @@ function Sleep() {
   return (
     <div className="mainContainer">
       <MiniHero backgroundImage={heroBackground}>
-        <h1>Sleep</h1>
+        <h1 className="pillarTitleName">Sleep</h1>
       </MiniHero>
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-            <h1>Your Sleep Advice</h1>
+          <br></br>
+            <h1 className="pageTitle">Your Sleep Advice</h1>
           </Col>
         </Row>
         <Row>
           <Col size="md-12">
+          <div className="mainBodyText">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
               consequat mauris ullamcorper eu. Orci varius natoque penatibus et magnis dis
@@ -54,8 +56,11 @@ function Sleep() {
               interdum elit pulvinar eu. Quisque vitae quam dapibus, vestibulum mauris quis, laoreet
               massa.
             </p>
+            </div>
           </Col>
+
         </Row>
+
       </Container>
     </div>
   );
