@@ -1,7 +1,22 @@
 .zenQuote {
-    color: rgb(236, 236, 236) !important;
+    color: rgb(236, 236, 236);
+    font-size: 2.4em !important;
+    line-height: 1;
 }
 
 .zenAuth {
-    color: rgb(180, 194, 179) !important;
+    color: rgb(180, 194, 179);
+    font-size: 2.2em !important;
+    line-height: 1.4;
 }
+
+/* .quoteContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+} */

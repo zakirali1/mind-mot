@@ -1,6 +1,6 @@
 .wrapper {
     min-height: 100%;
-    padding-bottom: 100px;
-    background-color: rgb(19, 19, 19);
+    padding-bottom: 0px;
+    background-color: rgb(240, 240, 240) !important;
   }
   
