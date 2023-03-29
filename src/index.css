@@ -73,3 +73,12 @@ body {
   animation: fadeIn !important; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 6s !important; /* don't forget to set a duration! */
 }
+
+p{
+  font-size: 1.4em !important;
+}
+
+ul, ol{
+  font-size: 1.4em !important;
+  color: rgb(202, 202, 202);
+}
