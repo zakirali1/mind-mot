@@ -8,12 +8,14 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
+import Burger from "./components/Navbar/Burger";
 
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
+        <Burger className="burger-menu" />
         <Wrapper>
           <Routes>
             <Route path="/" element={<Home />} />

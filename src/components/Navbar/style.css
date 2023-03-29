@@ -1,3 +1,15 @@
-nav.navbar.navbar-default {
-    margin-bottom: 0;
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: block;
   }
+
+  .regular-menu {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none !important;
+  }
+}
