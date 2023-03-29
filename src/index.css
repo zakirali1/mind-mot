@@ -113,6 +113,8 @@ ul, ol{
   display: center;
   margin: 5px;
   padding: 5px;
+  animation: fadeIn !important; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s !important; /* don't forget to set a duration! */
 }
 
 .moreInfoRecipe {
