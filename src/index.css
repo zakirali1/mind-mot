@@ -21,6 +21,7 @@ p {
 
 h1, h2, h3 {
     color: rgb(199, 164, 90);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -29,7 +30,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(180deg, rgb(235, 233, 233), rgb(235, 233, 233), rgb(44, 44, 44), rgb(44, 44, 44), rgb(0, 0, 0) ) !important;
+  background-image: linear-gradient(180deg, rgb(235, 233, 233), rgb(235, 233, 233), rgb(44, 44, 44), rgb(44, 44, 44), rgb(44, 44, 44), rgb(44, 44, 44), rgb(44, 44, 44), rgb(44, 44, 44), rgb(44, 44, 44), rgb(44, 44, 44), rgb(44, 44, 44), rgb(0, 0, 0) ) !important;
 }
 
 .pillarTitleName {
@@ -81,4 +82,46 @@ p{
 ul, ol{
   font-size: 1.4em !important;
   color: rgb(202, 202, 202);
+}
+
+.sleepingpersonimage {
+  /* making the image rounded edge and to change size based on screen width, flex */
+  border-radius: 2%;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.MindMOT {
+  /* making the image rounded edge and to change size based on screen width, flex */
+  border-radius: 50%;
+  /* making have a simple grey border and a dropshadow */
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.mindMOTContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.drinkImage {
+  /* making the image rounded edge and to change size based on screen width, flex */
+  border-radius: 10%;
+  /* height: auto; */
+  display: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.moreInfoRecipe {
+  /* Make the link unstyled */
+  text-decoration: none;
+  color: rgb(34, 97, 78) !important;
+/* make drop shadow and glow */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+
+
+
 }
