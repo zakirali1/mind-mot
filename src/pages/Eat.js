@@ -1,64 +1,125 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import MiniHero from "../components/MiniHero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg";
+import axios from "axios";
+import moment from "moment";
+
+
+
+
+
+
+///ARRAY OF SELECTED FRUIT TO DISPLAY
+let fruits = ["apple", "grapes", "berries", "banana", "apricot", "orange", "olive" ];
+
+//RANDOMLY SELECTING FRUIT OF THE DAY FROM THE ARRAY
+let rand = Math.random();
+let fruitsLength = fruits.length;
+let randIndex = Math.floor(rand * fruitsLength)
+let randomFruit = fruits[randIndex]
+ 
+
+
+
+
+//// QUERY URL/PARAMETER FOR THE EDAMAM API
+const baseUrl = 'https://api.edamam.com/api/recipes/v2?type=public&'
+const initialQ = `q=${randomFruit}&app_id=5f2a8aa2&app_key=36918ebfaad4deeaf3f3cbc14048f581`
+
 
 function Eat() {
+
+
+ const [day, setDay] = useState()
+  const [drink, setDrink] = useState([]);
+  const [ingredients, setIngredients] = useState([]);
+  const [meaiType, SetMealType] = useState([]);
+  const [moreInfo, setMoreInfo] = useState();
+  const [label, setLAbel] = useState();
+  const [calories, setCalories]= useState();
+  
+
+  
+
+  
+  //// GET THE DAY OF THE WEEK
+  useEffect(() =>{
+
+    setDay(moment().format(" dddd "))
+
+  },[setDay])
+ 
+
+  //// SETTING VALUES FROM EDAMAN API
+  useEffect (() => {
+    axios.get(baseUrl + initialQ)
+    .then((response)=> {
+
+      console.log(response)
+      setDrink(response.data.hits[0].recipe.images.REGULAR.url)
+      setIngredients(response.data.hits[0].recipe.ingredientLines)
+      SetMealType(response.data.hits[0].recipe.mealType)
+      setMoreInfo(response.data.hits[0].recipe.url)
+      setLAbel((response.data.hits[0].recipe.label))
+      setCalories((response.data.hits[0].recipe.calories))
+
+    })
+    
+
+  }, [])
+
+
+
+
+
+
   return (
         <div className="mainContainer">
     <div>
       <MiniHero backgroundImage={heroBackground}>
-        <h1 className="pillarTitleName">Eat</h1>
+        <h1>Eat</h1>
       </MiniHero>
       <Container style={{ marginTop: 30 }}>
       
         <Row>
           <Col size="md-12">
-          <br></br>
-            <h1 className="pageTitle">Your Daily Smoothie Recipe</h1>
+            <h1>{day}</h1>
+           <div><h2>{label}</h2> </div>
+           
           </Col>
         </Row>
         <Row>
           <Col size="md-12">
-          <div className="mainBodyText">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
-              consequat mauris ullamcorper eu. Orci varius natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Pellentesque et dui id justo finibus
-              sollicitudin at et metus. Ut feugiat tellus nec metus commodo, sed suscipit nisi
-              gravida. Duis eget vestibulum quam, ut porttitor sem. Donec sagittis mi sollicitudin
-              turpis semper, et interdum risus lobortis. Vestibulum suscipit nunc non egestas
-              tristique. Proin hendrerit efficitur malesuada. Mauris lorem urna, sodales accumsan
-              quam non, tristique tempor erat. Nullam non sem facilisis, tempus tortor sit amet,
-              volutpat nisl. Ut et turpis non nunc maximus mollis a vitae tortor. Pellentesque
-              mattis risus ac quam laoreet cursus. Praesent suscipit orci neque, vestibulum
-              tincidunt augue tincidunt non. Duis consequat mattis tortor vitae mattis.
-            </p>
-            <p>
-              Phasellus at rutrum nisl. Praesent sed massa ut ipsum bibendum porttitor. Sed
-              malesuada molestie velit ac viverra. Quisque a ullamcorper purus. Curabitur luctus mi
-              ac mi hendrerit semper. Nulla tincidunt accumsan lobortis. Mauris convallis sapien non
-              nibh porta accumsan. Nunc volutpat tempus porttitor. Nunc congue dictum egestas.
-              Aliquam blandit mi eu urna scelerisque, vitae volutpat ligula ultricies. Maecenas vel
-              porta augue. Fusce mauris ex, dignissim et lacinia ut, tempus eget nibh.
-            </p>
-            <p>
-              Etiam ut massa efficitur, gravida sapien non, condimentum sapien. Suspendisse massa
-              tortor, facilisis in neque sit amet, scelerisque elementum tortor. Nullam eget nibh
-              sit amet odio lobortis ullamcorper. Nulla bibendum magna nec sem pulvinar lobortis.
-              Mauris et imperdiet urna, vitae lobortis dui. Nunc elementum elit mi, non mattis enim
-              congue at. Proin mi lectus, ullamcorper id hendrerit eu, ultricies vitae lacus. Nunc
-              vehicula, erat eget laoreet condimentum, felis ante malesuada leo, nec efficitur diam
-              nisi eget nisi. Cras arcu lacus, tristique in bibendum vitae, elementum eget lorem.
-              Maecenas vestibulum volutpat orci eu pharetra. Praesent vel blandit ante, nec faucibus
-              libero. Sed ultrices lorem ex, eu facilisis libero convallis ac. Vivamus id dapibus
-              eros. Nullam tempor sem rhoncus porta semper. Proin bibendum vulputate nisl, fringilla
-              interdum elit pulvinar eu. Quisque vitae quam dapibus, vestibulum mauris quis, laoreet
-              massa.
-            </p>
+        
+            <div>
+            <img src={drink}/>
+             
             </div>
+
+            <div>
+              <h3>Ingredients</h3>
+
+              <p>{ingredients.map((i)=> (<li> {i}</li>))}</p>
+
+            </div>
+
+            <div>
+              <h3>Meal Type</h3>
+              <p>{meaiType.map((m)=> (<li>{m}</li>))} </p> 
+              <p><li> calories : {" "}{calories} </li></p>
+              
+            </div>
+
+            <div>
+              <h3>Furher details</h3>
+
+              <a href={moreInfo} target='_blank'>Click for more details</a>
+                
+            </div>
+
           </Col>
         </Row>
       </Container>
