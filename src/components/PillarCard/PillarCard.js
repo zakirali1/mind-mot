@@ -3,10 +3,10 @@ import pillarData from "../pillarData.json"
 import GaugeChart from 'react-gauge-chart'
 import "./style.css";
 import { useState } from 'react';
-import Eat from './Eat.js'
-import Move from './Move.js'
-import Relax from './Relax.js'
-import Sleep from './Sleep.js'
+import Eat from './EatCard.js'
+import Move from './MoveCard.js'
+import Relax from './RelaxCard.js'
+import Sleep from './SleepCard.js'
 
 
 function PillarCard() {
