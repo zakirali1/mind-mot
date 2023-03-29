@@ -82,3 +82,21 @@ ul, ol{
   font-size: 1.4em !important;
   color: rgb(202, 202, 202);
 }
+
+.PillarCardHeader {
+  font-size: 1em !important;
+  width: 60%;
+  height: 50%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+
+}
+
+.sleepingpersonimage {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  align-self: center;
+  border-radius: 10px;
+}

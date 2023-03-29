@@ -4,18 +4,19 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg";
+import EatPillarCard from "../components/PillarCard/Eat.js";
 
 function Eat() {
   return (
-        <div className="mainContainer">
-    <div>
+    <div className="mainContainer">
       <MiniHero backgroundImage={heroBackground}>
-        <h1 className="pillarTitleName">Eat</h1>
+      <div className="PillarCardHeader">
+<EatPillarCard />
+</div>
       </MiniHero>
-      <Container style={{ marginTop: 30 }}>
-      
-        <Row>
-          <Col size="md-12">
+    <Container style={{ marginTop: 30 }}>
+      <Row>
+        <Col size="md-12">
           <br></br>
             <h1 className="pageTitle">Your Daily Smoothie Recipe</h1>
           </Col>
@@ -62,7 +63,6 @@ function Eat() {
           </Col>
         </Row>
       </Container>
-    </div>
     </div>
   );
 }

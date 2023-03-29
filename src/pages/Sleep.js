@@ -4,12 +4,16 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import heroBackground from "../assets/hero-background.jpg";
+import SleepPillarCard from "../components/PillarCard/Sleep.js";
+import sleepingperson from "../assets/sleepingperson.jpg";
 
 function Sleep() {
   return (
     <div className="mainContainer">
       <MiniHero backgroundImage={heroBackground}>
-        <h1 className="pillarTitleName">Sleep</h1>
+      <div className="PillarCardHeader">
+<SleepPillarCard />
+</div>
       </MiniHero>
       <Container style={{ marginTop: 30 }}>
         <Row>
@@ -19,7 +23,7 @@ function Sleep() {
           </Col>
         </Row>
         <Row>
-          <Col size="md-12">
+          <Col size="md-8">
           <div className="mainBodyText">
           <ol className="animate__animated animate__fadeIn animate__delay-1s">
     <li>Stick to a regular sleep schedule: Going to bed and waking up at the same time every day, including weekends, helps regulate your body's internal clock and improve sleep quality.</li>
@@ -34,6 +38,13 @@ function Sleep() {
     <br></br>
     <li>Practice relaxation techniques: Deep breathing, progressive muscle relaxation, or mindfulness meditation can help you relax and prepare for sleep.</li>
 </ol>
+            </div>
+          </Col>
+          <Col size="md-4">
+          <div className="mainBodyText">
+          <div className="animate__animated animate__fadeIn animate__delay-1s">
+          <img src={sleepingperson} alt="Sleeping person" className="sleepingpersonimage" />
+</div>
             </div>
           </Col>
 

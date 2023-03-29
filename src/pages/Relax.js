@@ -8,6 +8,7 @@ import Card from "react-bootstrap/Card";
 import "./relax.css";
 import "animate.css";
 import YoutubeEmbed from "../components/YoutubeEmbed";
+import RelaxPillarCard from "../components/PillarCard/Relax.js";
 
 function Relax() {
   const inputs = JSON.parse(localStorage.getItem("gratitude"));
@@ -43,9 +44,11 @@ function Relax() {
 
       {/* <div className="mainContainer"> */}
       <div className="mainContainer">
-        <MiniHero backgroundImage={heroBackground}>
-          <h1 className="pillarTitleName">Relax</h1>
-        </MiniHero>
+      <MiniHero backgroundImage={heroBackground}>
+      <div className="PillarCardHeader">
+<RelaxPillarCard />
+</div>
+      </MiniHero>
               <Container style={{ marginTop: 30 }}>        
 
       {/* </div> */}
