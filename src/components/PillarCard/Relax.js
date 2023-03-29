@@ -2,13 +2,17 @@ import React, { useState, useEffect } from 'react'
 import pillarData from "../pillarData.json"
 import GaugeChart from 'react-gauge-chart';
 
+{/* UseState to track  changes for clicked items, useState to monitor for any changes */}
+
 function Relax() {
     const [relaxScore, setRelaxScore] = useState([])
     const [relaxPercent, setRelaxPercent] = useState()
 
     const relaxPillar = pillarData[2]
 
-    console.log(relaxPillar)
+   
+
+    {/* conditional render based on ischecked being true*/}
 
     function handleCheckedBox(e) {
         console.log(e)
@@ -28,7 +32,7 @@ function Relax() {
 
     useEffect(() =>{
         
-        const updatedVal = relaxScore.length / 5
+        const updatedVal = relaxScore.length / relaxPillar.toDo.list.length
         setRelaxPercent(updatedVal)
 
     },[relaxScore])
@@ -64,7 +68,7 @@ function Relax() {
             // change the percent value inside the curly braces to change the gauge chart -this is where we need JS to calculate the number of todos done
               />
   
-            {/* LOOPING THROUGH TODOS */}
+            {/* Rendering listItems */}
             {listItems}
             
             
