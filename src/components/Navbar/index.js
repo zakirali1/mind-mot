@@ -67,7 +67,12 @@ const Navbar = () => {
         </Menu.Item>
 
         <Menu.Item style={{ fontSize: 20, color: "darkgrey" }}>
-          Contact
+          <a
+            style={{ fontSize: 20, color: "darkgrey" }}
+            href="mailto:info@mindmot.com?,&subject=Add your subject&body=your message here"
+          >
+            Contact
+          </a>
         </Menu.Item>
         <div
           style={{
