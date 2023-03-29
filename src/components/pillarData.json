@@ -1,79 +1,68 @@
 [
-    {
-        "id": 0,
+     
+        {
+        "key": "Eat",
         "pillarName": "Eat",
         "pillarDesc": "This pillar focuses on the daily nutrition that support your health and wellbeing",
         "image": "eat.png",
         "imageUrl": "../assets/eat.png",
         "imageAlt": "An image of a glass of water and an apple representing the Eat pillar",
-        "toDo": [
+        "toDo": 
             {
                 "id": 0,
-                "list1": "Chose a lower sugar alternative",
-                "list2": "Eat vegetables spanning the rainbow colours",
-                "list3": "Eat within a 12 hour window (to encourage micro-fasting)",
-                "list4": "Drink at least 250ml glasses of water",
-                "list5": "Avoid processed foods (those containing more than 5 ingredients and excessive preservatives)"
+                "list": ["Chose a lower sugar alternative","Eat vegetables spanning the rainbow colours","Eat within a 12 hour window (to encourage micro-fasting)","Drink at least 250ml glasses of water", "Avoid processed foods (those containing more than 5 ingredients and excessive preservatives)"]
+              
             } 
-        ]
+        
+        
     },
     
     {
-        "id": 1,
+        "key": "Move",
         "pillarName": "Move",
         "pillarDesc": "This pillar focuses on the daily physical activities and movements that support your health and wellbeing",
         "image": "move.png",
         "imageUrl": "../assets/move.png",
         "imageAlt": "An icon of a heart beating to represent the Move pillar",
-        "toDo": [
+        "toDo": 
             {
                 "id": 1,
-                "list1": "Walk at least 10,000 steps",
-                "list2": "Do 1 of 2 strength trainings this week",
-                "list3": "Do 1 of 2 10 minute HIIT this week",
-                "list4": "Do a movement snack",
-                "list5": "Do 1 glute movement"
+                "list": ["Walk at least 10,000 steps","Do 1 of 2 strength trainings this week","Do 1 of 2 10 minute HIIT this week","Do a movement snack","Do 1 glute movement"]
+            
             }
-        ]
-
+        
         
     },
 
     {
-        "id": 2,
+        "key": "Relax",
         "pillarName": "Relax",
         "pillarDesc": "This pillar focuses on the daily relaxation and mindfulness activities that support your health and wellbeing",
         "image": "relax.png",
         "imageUrl": "../assets/relax.png",
         "imageAlt": "An icon of a music player and headphones representing relaxation and the Relax pillar",
-        "toDo": [
+        "toDo": 
             {
                 "id": 2,
-                "list1": "Take at least 15 minutes of 'me' time",
-                "list2": "Have a screen-free day",
-                "list3": "Write down 3 gratitudes",
-                "list4": "Be still for 5 minutes",
-                "list5": "Eat a meal distraction- and device-free"
+                "list": ["Take at least 15 minutes of 'me' time","Have a screen-free day","Write down 3 gratitudes","Be still for 5 minutes","Eat a meal distraction- and device-free"]
+               
             }    
-        ]      
+        
     },
 
     {
-        "id": 3,
+        "key": "Sleep",
         "pillarName": "Sleep",
         "pillarDesc": "This pillar focuses on the daily sleep and rest activities that support your health and wellbeing",
         "image": "sleep.png",
         "imageUrl": "../assets/sleep.png",
         "imageAlt": "An icon of a bed representing the Sleep pillar",
-        "toDo": [
+        "toDo": 
             {
                 "id": 3,
-                "list1": "Keep bedroom dark and put devices away/off",
-                "list2": "Spend 20 minutes outside in the morning",
-                "list3": "No technology 90 minutes before bed",
-                "list4": "Minimise any highly emotional issues/conversations before bed",
-                "list5": "Consume caffeine before lunchtime"
+                "list": ["Keep bedroom dark and put devices away/off","Spend 20 minutes outside in the morning","No technology 90 minutes before bed","Minimise any highly emotional issues/conversations before bed","Minimise any highly emotional issues/conversations before bed"]
+              
             }
-        ]
+        
     }
 ]

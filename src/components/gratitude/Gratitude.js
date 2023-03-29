@@ -8,14 +8,18 @@ import "./style.css";
 function Gratitude() {
   const [inputs, setInputs] = useState([]);
 
-  let localS = localStorage.getItem("gratitude") || [];
+  
 
-  function handleInputChange(event) {
-    const { name, value } = event.target;
-    setInputs((inputs) => ({ ...inputs, [name]: value }));
+    let localS = localStorage.getItem("gratitude" ) || [];
 
-    console.log(inputs);
-  }
+    localS = localStorage.setItem("gratitude", JSON.stringify(["inner peace"]))
+    
+    function handleInputChange(event) {
+      const { name, value } = event.target;
+      setInputs(inputs => ({...inputs, [name]: value}))
+      
+      console.log(inputs)
+    }
 
   function handleClick(e) {
     console.log(e);
