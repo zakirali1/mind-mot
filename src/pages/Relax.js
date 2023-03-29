@@ -50,7 +50,6 @@ function Relax() {
 
       {/* </div> */}
       <Col size="md-12">
-          <br></br>
             <h1 className="pageTitle">Your 3 Gratitudes for Today:</h1>
           </Col>
       {Momento}
