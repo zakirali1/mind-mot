@@ -104,15 +104,15 @@ function Eat() {
 
             <div>
             <br></br>
-              <h3>Meal Type</h3>
-              <p>{meaiType.map((m)=> (<li>{m}</li>))} </p> 
-              <p><li> calories : {" "}{calories} </li></p>
+              <h3 className="mainBodyText">Meal Type</h3>
+              <p className="mainBodyText">{meaiType.map((m)=> (<li>{m}</li>))} </p> 
+              <p className="mainBodyText"><li> calories : {" "}{calories} </li></p>
               
             </div>
 
             <div>
              <br></br>
-               <h3><a href={moreInfo} target='_blank' className="moreInfoRecipe">Click for more details</a></h3>
+               <h3 className="mainBodyText"><a href={moreInfo} target='_blank' className="moreInfoRecipe">Click for more details</a></h3>
                 
             </div>
 
