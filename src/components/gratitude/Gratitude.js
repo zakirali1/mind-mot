@@ -9,6 +9,8 @@ function Gratitude() {
     const [inputs, setInputs] = useState([])
 
     let localS = localStorage.getItem("gratitude" ) || [];
+
+  localS = localStorage.setItem("gratitude", JSON.stringify(["inner peace"]))
     
     function handleInputChange(event) {
       const { name, value } = event.target;
