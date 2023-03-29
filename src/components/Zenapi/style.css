@@ -20,3 +20,8 @@
     height: 100%;
     width: 100%;
 } */
+
+.zenQuote, .zenAuth {  
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+  }

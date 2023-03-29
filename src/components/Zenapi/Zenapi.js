@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import "./style.css";
+// import animate css
+import "animate.css";
 
 const baseUrl = 'https://zenquotes.io/api/quotes/random';
 const proxyUrl = 'https://api.allorigins.win/raw?url='
