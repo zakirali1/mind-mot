@@ -3,6 +3,7 @@ import axios from 'axios'
 import "./style.css";
 // import animate css
 import "animate.css";
+import moment from 'moment';
 
 const baseUrl = 'https://zenquotes.io/api/quotes/random';
 const proxyUrl = 'https://api.allorigins.win/raw?url='
@@ -41,10 +42,17 @@ const proxyUrl = 'https://api.allorigins.win/raw?url='
 
 
  return (
+    <div>
+        <div>
+            <h2> {(moment().format(" dddd, MMMM Do YYYY "))}</h2> 
+        </div>
+
         <div className="align-items-center quoteContainer">
-        <div className="zenQuote">{quotes.q}</div>
-        <div className="zenAuth">{quotes.a}</div>
+            <div className="zenQuote">{quotes.q}</div>
+            <div className="zenAuth">{quotes.a}</div>
+        </div>
     </div>
+        
  )
 
 
