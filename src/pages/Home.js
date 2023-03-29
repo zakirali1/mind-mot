@@ -19,7 +19,7 @@ function Home() {
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
-            <h1 className="d-flex justify-content-center">Your Daily Dashboard</h1>
+            <h1 className="d-flex justify-content-center pageTitle">Your Daily Dashboard</h1>
           </Col>
         </Row>
 
@@ -34,13 +34,14 @@ function Home() {
       
         <Row>
           <Col size="md-12">
-            <h2>Your Daily Health Signposting</h2>
+            <h2 className="pageTitle">Your Daily Health Signposting</h2>
           </Col>
         </Row>
 
 
         <Row>
           <Col size="md-12">
+          <div className="mainBodyText">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquet diam tortor, id
               consequat mauris ullamcorper eu. Orci varius natoque penatibus et magnis dis
@@ -76,6 +77,7 @@ function Home() {
               interdum elit pulvinar eu. Quisque vitae quam dapibus, vestibulum mauris quis, laoreet
               massa.
             </p>
+            </div>
           </Col>
         </Row>
         <Gratitude />

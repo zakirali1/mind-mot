@@ -1,0 +1,17 @@
+.entry {
+  padding: 20px;
+  border-left: 2px solid #ccc;
+  font-style: italic;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 10px,
+    #f5f5f5 10px,
+    #f5f5f5 12px
+  );
+  margin-top: 10px;
+}
+.entry:focus {
+  outline: 2px solid rgb(119, 116, 116);
+}

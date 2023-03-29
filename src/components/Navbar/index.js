@@ -9,12 +9,16 @@ import logo from "../../assets/white.png";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 const Navbar = () => {
   return (
-    <Menu secondary stackable style={{ padding: "10px", position: "relative" }}>
+    <Menu 
+    secondary 
+    stackable 
+    className="grey"
+    style={{ padding: "10px", position: "relative"}}>
       <Menu.Item
         as={NavLink}
         to="/"
         className="mobile only"
-        style={{ fontSize: 20, color: "grey" }}
+        style={{ fontSize: 20, color: "black" }}
       >
         Home
       </Menu.Item>
