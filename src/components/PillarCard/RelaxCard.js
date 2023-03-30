@@ -71,6 +71,8 @@ function RelaxCard() {
             {/* Rendering listItems */}
             {listItems}
             
+            
+            <a href={'/relax'} target= '_blank' className="card-link">More info</a>
           </div>
         </div>
         </div>

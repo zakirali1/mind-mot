@@ -80,43 +80,39 @@ function Eat() {
         <div className="mainContainer">
     <div>
       <MiniHero backgroundImage={heroBackground}>
-        <h1>Eat</h1>
+        <h1 className="pillarTitleName">Eat</h1>
       </MiniHero>
       <Container style={{ marginTop: 30 }}>
       
         <Row>
           <Col size="md-12">
-            <h1>{day}</h1>
-           <div><h2>{label}</h2> </div>
-           
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-12">
+            <h1>Your {day} Recipe</h1>
+           <h2>{label}</h2> 
+  
         
             <div>
-            <img src={drink}/>
+            <img src={drink} className="drinkImage"/>
              
             </div>
 
             <div>
-              <h3>Ingredients</h3>
+              <h3 className="mainBodyText">Ingredients</h3>
 
-              <p>{ingredients.map((i)=> (<li> {i}</li>))}</p>
+              <p className="mainBodyText">{ingredients.map((i)=> (<li> {i}</li>))}</p>
 
             </div>
 
             <div>
-              <h3>Meal Type</h3>
-              <p>{meaiType.map((m)=> (<li>{m}</li>))} </p> 
-              <p><li> calories : {" "}{calories} </li></p>
+            <br></br>
+              <h3 className="mainBodyText">Meal Type</h3>
+              <p className="mainBodyText">{meaiType.map((m)=> (<li>{m}</li>))} </p> 
+              <p className="mainBodyText"><li> calories : {" "}{calories} </li></p>
               
             </div>
 
             <div>
-              <h3>Furher details</h3>
-
-              <a href={moreInfo} target='_blank'>Click for more details</a>
+             <br></br>
+               <h3 className="mainBodyText"><a href={moreInfo} target='_blank' className="moreInfoRecipe">Click for more details</a></h3>
                 
             </div>
 

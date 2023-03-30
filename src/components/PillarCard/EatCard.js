@@ -74,6 +74,8 @@ function EatCard() {
             {/* Render Listitems */}
             {listItems}
             
+            
+            <a href={'/eat'} target= '_blank' className="card-link">More info</a> 
           </div>
         </div>
         </div>
