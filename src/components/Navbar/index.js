@@ -70,6 +70,7 @@ const Navbar = () => {
           <a
             style={{ fontSize: 20, color: "darkgrey" }}
             href="mailto:info@mindmot.com?,&subject=Add your subject&body=your message here"
+            alt=""
           >
             Contact
           </a>
