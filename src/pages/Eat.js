@@ -91,7 +91,7 @@ function Eat() {
   
         
             <div>
-            <img src={drink} className="drinkImage"/>
+            <img src={drink} className="drinkImage" alt=""/>
              
             </div>
 
@@ -112,7 +112,7 @@ function Eat() {
 
             <div>
              <br></br>
-               <h3 className="mainBodyText"><a href={moreInfo} target='_blank' className="moreInfoRecipe">Click for more details</a></h3>
+               <h3 className="mainBodyText"><a href={moreInfo} className="moreInfoRecipe">Click for more details</a></h3>
                 
             </div>
 

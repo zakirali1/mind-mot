@@ -35,6 +35,7 @@ function RelaxCard() {
         const updatedVal = relaxScore.length / relaxPillar.toDo.list.length
         setRelaxPercent(updatedVal)
 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[relaxScore])
 
     console.log(relaxPercent)
@@ -72,7 +73,7 @@ function RelaxCard() {
             {listItems}
             
             
-            <a href={'/relax'} target= '_blank' className="card-link">More info</a>
+            <a href={'/relax'} className="card-link">More info</a>
           </div>
         </div>
         </div>
