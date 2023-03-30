@@ -11,14 +11,14 @@ function Gratitude() {
   
 
     let localS = localStorage.getItem("gratitude" ) || [];
-
+  
     localS = localStorage.setItem("gratitude", JSON.stringify(["inner peace"]))
     
     function handleInputChange(event) {
       const { name, value } = event.target;
       setInputs(inputs => ({...inputs, [name]: value}))
       
-      console.log(inputs)
+      console.log(localS)
     }
 
   function handleClick(e) {
