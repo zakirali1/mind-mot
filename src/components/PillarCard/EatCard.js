@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import pillarData from "../pillarData.json"
 import GaugeChart from 'react-gauge-chart';
 
-{/* UseState to track  changes for clicked items, useState to monitor for any changes */}
+/* UseState to track  changes for clicked items, useState to monitor for any changes */
 
 function EatCard() {
 
@@ -12,9 +12,8 @@ function EatCard() {
 
     const eatPillar = pillarData[0]
 
-    const savedEatScore = JSON.parse(localStorage.getItem("EatScore")) || [];
 
-    {/* conditional render based on ischecked being true*/}
+    /* conditional render based on ischecked being true*/
 
     function handleCheckedBox(e) {
         console.log(e)
@@ -32,6 +31,7 @@ function EatCard() {
 
     }
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() =>{
         
         localStorage.setItem("EatScore", JSON.stringify(eatScore));
@@ -74,8 +74,6 @@ function EatCard() {
             {/* Render Listitems */}
             {listItems}
             
-            
-            <a href="#" className="card-link">More details</a>
           </div>
         </div>
         </div>
