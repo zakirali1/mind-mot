@@ -22,9 +22,12 @@ Edamam,Animate and Zen API
 
 No need to install. Just follow the link below: 
 
-##Future Updates
+https://main--regal-pony-57dce8.netlify.app/
 
-ADD THE LINK WHEN READY
+Link to repo: 
+
+https://github.com/zakirali1/mind-mot/
+
 
 ##Contributors
 
