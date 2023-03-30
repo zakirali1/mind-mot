@@ -44,11 +44,13 @@ const proxyUrl = 'https://api.allorigins.win/raw?url='
  return (
     <div>
         <div>
-            <h2> {(moment().format(" dddd, MMMM Do YYYY "))}</h2> 
+            <div className="todaysDate"> {(moment().format(" dddd Do MMMM YYYY "))}</div> 
         </div>
-
+<br></br>
+<br></br>
         <div className="align-items-center quoteContainer">
             <div className="zenQuote">{quotes.q}</div>
+            <br></br>
             <div className="zenAuth">{quotes.a}</div>
         </div>
     </div>
