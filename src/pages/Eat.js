@@ -56,23 +56,20 @@ function Eat() {
   }, []);
 
   return (
-        <div className="mainContainer">
-    <div>
-      <MiniHero backgroundImage={heroBackground}>
-        <h1 className="pillarTitleName">Eat</h1>
-      </MiniHero>
-      <Container style={{ marginTop: 30 }}>
-      
-        <Row>
-          <Col size="md-12">
-            <h1>Your {day} Recipe</h1>
-           <h2>{label}</h2> 
-  
-        
-            <div>
-            <img src={drink} className="drinkImage"/>
-             
-            </div>
+    <div className="mainContainer">
+      <div>
+        <MiniHero backgroundImage={heroBackground}>
+          <h1 className="pillarTitleName">Eat</h1>
+        </MiniHero>
+        <Container style={{ marginTop: 30 }}>
+          <Row>
+            <Col size="md-12">
+              <h1>Your {day} Recipe</h1>
+              <h2>{label}</h2>
+
+              <div>
+                <img src={drink} className="drinkImage" />
+              </div>
 
               <div>
                 <h3 className="mainBodyText">Ingredients</h3>
@@ -85,8 +82,8 @@ function Eat() {
               </div>
 
               <div>
-              <br></br>
-              <h3 className="mainBodyText">Meal Type</h3>
+                <br></br>
+                <h3 className="mainBodyText">Meal Type</h3>
                 <p className="mainBodyText">
                   {meaiType.map((m) => (
                     <li>{m}</li>
@@ -97,22 +94,13 @@ function Eat() {
                 </p>
               </div>
 
-            <div>
-             <br></br>
-               <h3 className="mainBodyText"><a href={moreInfo} target='_blank' className="moreInfoRecipe">Click for more details</a></h3>
-                
-            </div>
-
-          </Col>
-        </Row>
-      </Container>
-    </div>
               <div>
-                <h3>Furher details</h3>
-
-                <a href={moreInfo} target="_blank" rel="noreferrer">
-                  Click for more details
-                </a>
+                <br></br>
+                <h3 className="mainBodyText">
+                  <a href={moreInfo} target="_blank" className="moreInfoRecipe">
+                    Click for more details
+                  </a>
+                </h3>
               </div>
             </Col>
           </Row>
