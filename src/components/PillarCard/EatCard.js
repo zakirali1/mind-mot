@@ -75,7 +75,7 @@ function EatCard() {
             {listItems}
             
             
-            <a href="#" className="card-link">More details</a>
+            <a href={'/eat'} target= '_blank' className="card-link">More info</a> 
           </div>
         </div>
         </div>

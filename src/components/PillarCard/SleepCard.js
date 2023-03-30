@@ -69,7 +69,7 @@ function SleepCard() {
             {listItems}
             
             
-            <a href="#" className="card-link">More details</a>
+            <a href={'/sleep'} target= '_blank' className="card-link">More info</a>
           </div>
         </div>
         </div>
