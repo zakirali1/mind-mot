@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import pillarData from "../pillarData.json"
 import GaugeChart from 'react-gauge-chart';
 
-{/* UseState to track  changes for clicked items, useState to monitor for any changes */}
+/* UseState to track  changes for clicked items, useState to monitor for any changes */
 
 function RelaxCard() {
     const [relaxScore, setRelaxScore] = useState(JSON.parse(localStorage.getItem("RelaxScore")) || []);
@@ -12,7 +12,7 @@ function RelaxCard() {
 
    
 
-    {/* conditional render based on ischecked being true*/}
+    /* conditional render based on ischecked being true*/
 
     function handleCheckedBox(e) {
         console.log(e)
@@ -29,7 +29,7 @@ function RelaxCard() {
     }
 
 
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() =>{
         localStorage.setItem("RelaxScore", JSON.stringify(relaxScore));
         const updatedVal = relaxScore.length / relaxPillar.toDo.list.length

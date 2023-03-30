@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import pillarData from "../pillarData.json"
 import GaugeChart from 'react-gauge-chart';
 
-{/* UseState to track  changes for clicked items, useState to monitor for any changes */}
+/* UseState to track  changes for clicked items, useState to monitor for any changes */
 
 function SleepCard() {
     const [sleepScore, setSleepScore] = useState(JSON.parse(localStorage.getItem("SleepScore")) || []);
@@ -12,7 +12,7 @@ function SleepCard() {
 
     
 
-     {/* conditional render based on ischecked being true*/}
+     /* conditional render based on ischecked being true*/
 
     function handleCheckedBox(e) {
         console.log(e)
@@ -26,7 +26,7 @@ function SleepCard() {
             setSleepScore(sleepScore.filter(val => val !== currentVal))
         }
     }
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() =>{
         localStorage.setItem("SleepScore", JSON.stringify(sleepScore));
         const updatedVal = sleepScore.length / sleepPillar.toDo.list.length;
