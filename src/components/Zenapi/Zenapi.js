@@ -37,6 +37,7 @@ function Zenapi() {
 
   return (
     <div>
+<<<<<<< HEAD
       <div>
         <h2> {moment().format(" dddd, MMMM Do YYYY ")}</h2>
       </div>
@@ -45,6 +46,18 @@ function Zenapi() {
         <div className="zenQuote">{quotes.q}</div>
         <div className="zenAuth">{quotes.a}</div>
       </div>
+=======
+        <div>
+            <div className="todaysDate"> {(moment().format(" dddd Do MMMM YYYY "))}</div> 
+        </div>
+<br></br>
+<br></br>
+        <div className="align-items-center quoteContainer">
+            <div className="zenQuote">{quotes.q}</div>
+            <br></br>
+            <div className="zenAuth">{quotes.a}</div>
+        </div>
+>>>>>>> main
     </div>
   );
 }
