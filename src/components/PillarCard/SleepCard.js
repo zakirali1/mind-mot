@@ -26,12 +26,12 @@ function SleepCard() {
             setSleepScore(sleepScore.filter(val => val !== currentVal))
         }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     useEffect(() =>{
         localStorage.setItem("SleepScore", JSON.stringify(sleepScore));
         const updatedVal = sleepScore.length / sleepPillar.toDo.list.length;
         setSleepPercent(updatedVal)
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[sleepScore])
 
     console.log(sleepPercent)
@@ -69,7 +69,7 @@ function SleepCard() {
             {listItems}
             
             
-            <a href={'/sleep'} target= '_blank' className="card-link">More info</a>
+            <a href={'/sleep'} className="card-link">More info</a>
           </div>
         </div>
         </div>

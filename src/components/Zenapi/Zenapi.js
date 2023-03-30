@@ -35,7 +35,7 @@ const proxyUrl = 'https://api.allorigins.win/raw?url='
             
         }
         getquotes();
-        
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[quotes])
    
     const random = Math.floor(Math.random() * 50);

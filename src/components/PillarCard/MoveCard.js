@@ -28,12 +28,12 @@ function MoveCard() {
 
     }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
     useEffect(() =>{
         localStorage.setItem("MoveScore", JSON.stringify(moveScore));
         const updatedVal = moveScore.length / movePillar.toDo.list.length
         setMovePercent(updatedVal)
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
     },[moveScore])
 
     console.log(movePercent)
@@ -71,7 +71,7 @@ function MoveCard() {
             {listItems}
             
             
-            <a href={'/move'} target= '_blank' className="card-link">More info</a>
+            <a href={'/move'} className="card-link">More info</a>
           </div>
         </div>
         </div>

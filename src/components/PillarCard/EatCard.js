@@ -31,13 +31,13 @@ function EatCard() {
 
     }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
     useEffect(() =>{
         
         localStorage.setItem("EatScore", JSON.stringify(eatScore));
         const updatedVal = eatScore.length / eatPillar.toDo.list.length;
         setEatPercent(updatedVal)
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
     },[eatScore])
 
     console.log(eatPercent)
@@ -75,7 +75,7 @@ function EatCard() {
             {listItems}
             
             
-            <a href={'/eat'} target= '_blank' className="card-link">More info</a> 
+            <a href={'/eat'} className="card-link">More info</a> 
           </div>
         </div>
         </div>
